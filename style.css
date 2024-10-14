@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+* {
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #81ecec;
+    font-size: 0.8rem;
+}
+
+.card {
+    max-width: 88%;
+    box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.5), 0 8px 10px 2px rgba(0, 0, 0, 0.5);
+    background-color: #2e2d2d;
+    padding: 2rem;
+    color: white;
+    margin: 2rem auto; /* Centered and added margin for smaller screens */
+    position: relative;
+    overflow: hidden;
+}
+.path {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 15px; /* Adjust as needed */
+    color: #fff;
+    font-size: 0.9rem;
+    z-index: 10;
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%; */
+    
+
+}
+
+img {
+    height: 35vh;
+    margin-top: 1rem;
+    border-radius: 12px;
+}
+
+
+.info {
+    padding: 2rem 0; /* Adjust padding for smaller screens */
+}
+
+.checked {
+    color: rgb(255, 217, 0);
+    margin-right: 10px;
+}
+
+.fa-heart {
+    /* font-weight: lighter; */
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 2rem;
+    /* background-color: red; */
+}
+
+.fa-heart:hover {
+    color: rgb(255, 217, 0);
+}
+.col-12 , .col-9{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+}
+#reviews{
+    margin-left: 3vh;
+    color:grey;
+}
+.price{
+    margin-top: 1rem;
+}
+label.radio span
+{
+    padding: 1vh 4vh;
+    background: rgb(54,54,54);
+    color:grey;
+    display: inline-block;
+    margin-right: 2vh;
+}
+
+label.radio input:checked+span{
+    border: 1px solid #fff;
+    background: rgb(54, 54, 54);
+    margin-right: 2vh;
+    display: inline-block;
+    color:#fff;
+}
+label.radio input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+label.radio{
+    cursor: pointer;
+}
+.carousel-control-prev{
+    width: 3px;
+}
+.carousel-control-next{
+    left: 14vh;
+    right: unset;
+}
+.lower{
+    margin-top: 2rem;
+}
+.lower .col-6{
+    display: flex;
+    align-items: center;
+}
+
+.lower .btn{
+    background: transparent;
+    border-color: rgb(255,217,0);
+    color:rgb(255,217,0);
+}
+.lower .text-right{
+    display: flex;
+    justify-content: flex-end;
+}
+.lower .btn:hover{
+    color:#fff;
+    border-color: #fff;
+}
+.lower.btn:hover{
+    text-decoration: none;
+    color:unset;
+    
+}
+
+
+ @media (max-width: 768px) { */
+    .card {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    .info {
+        padding: 1rem 0;
+    }
+    img {
+        /* height: auto;
+        width: 100%; */
+        padding: 2.5rem 0;
+    }
+    .btn{
+        padding: 1vh;
+        font-size: 0.9rem;
+    }
+} 
